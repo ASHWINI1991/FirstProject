@@ -76,6 +76,7 @@ public class BookController
     public ResponseEntity addABookToLibrary(@RequestBody Book book)
     {
     	System.out.println("Called Post mehod*******");
+    	System.out.println("Called Post 2__mehod*******");
         try
         {
             Book createdBook = bookRepository.save(new Book(book.getTitle(), book.getAuthor(),
