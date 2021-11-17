@@ -32,6 +32,7 @@ public class BookController
     @GetMapping("/books")
     public ResponseEntity<List> getAllBooks(@RequestParam(required = false) String bookTitle)
     {
+    	System.out.println("Inside BookController");
         try
         {
             List listOfBooks = new ArrayList<>();
